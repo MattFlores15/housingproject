@@ -1,0 +1,1268 @@
+/*Importing font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*
+=====================================================================================================================
+													Code for Navigation Bar
+=====================================================================================================================
+*/
+body {
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  padding-right: 150px;
+}
+
+li {
+  float: right;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo {
+  width: 95px;
+  margin-left: 65px;
+  margin-top: 10px;
+}
+
+/*
+=====================================================================================================================
+													Code for index page
+=====================================================================================================================
+*/
+
+body {
+  background-color: #fef9f9;
+  color: #1d3b54;
+  font-family: Poppins;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Text_1 {
+  color: rgba(0, 0, 0, 1);
+  width: 495px;
+  height: 163px;
+  text-align: left;
+  font-size: 56px;
+  letter-spacing: 0;
+  max-width: 800px;
+  float: right;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.Text_2 {
+  color: rgba(0, 0, 0, 1);
+  width: 330px;
+  height: 55px;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0;
+  float: right;
+  margin-left: 250px;
+}
+.Main_Information {
+  float: left;
+  display: flex;
+}
+.Title_Desc {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+=====================================================================================================================
+                          Code for Footer 
+=====================================================================================================================
+*/
+
+footer {
+  background-color: #6596de;
+  width: 100%;
+}
+.flexbox {
+  margin-top: 10px;
+  display: flex;
+  color: #f0f9ff;
+  background-color: #6596de;
+  justify-content: center;
+}
+.flexbox > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.Services {
+  justify-content: center;
+  align-items: flex-end;
+}
+.Services a {
+  color: white;
+}
+.Services h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.extra_links {
+  justify-content: center;
+  align-items: flex-end;
+  text-align: left;
+}
+.extra_links a {
+  color: white;
+}
+.extra_links h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.Partnership {
+  width: 27%;
+  text-align: center;
+}
+.footer-images {
+  width: 150px;
+  float: right;
+  padding: 10px;
+}
+
+/*
+=====================================================================================================================
+                          Code for Social media icons 
+=====================================================================================================================
+*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .button-social {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  justify-content: center;
+}
+.wrapper .button-social:hover {
+  width: 200px;
+}
+.wrapper .button-social .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button-social:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button-social:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button-social:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button-social:nth-child(4):hover .icon {
+  background: #333;
+}
+.wrapper .button-social:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+.wrapper .button-social .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button-social:hover .icon i {
+  color: #fff;
+}
+.wrapper .button-social span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button-social:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button-social:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button-social:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button-social:nth-child(4) span {
+  color: #333;
+}
+.wrapper .button-social:nth-child(5) span {
+  color: #ff0000;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+}
+
+/*
+=====================================================================================================================
+													Code for Image Gallery
+=====================================================================================================================
+*/
+.slideshow-container {
+  max-width: 1000px;
+  position: sticky;
+  margin: auto;
+  justify-content: center;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 0 3px;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 3px 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.Housing_text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.housing_images {
+  float: right;
+  top: 150px;
+  height: 398px;
+  width: 682px;
+  border-radius: 2px;
+}
+
+/*
+=====================================================================================================================
+													Code for Filter
+=====================================================================================================================
+*/
+.Housing_Search {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 25%;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: rgba(9, 87, 203, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button a {
+  color: white;
+}
+
+.button:hover {
+  background: #0080ff;
+}
+
+select {
+  height: 42px;
+  padding: 10px 15px;
+  line-height: 22px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.LearnMore {
+  background-color: rgba(9, 87, 203, 255);
+  height: 50px;
+}
+
+#Eindhoven {
+  display: none;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+#Amsterdam {
+  display: none;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+#Rotterdam {
+  display: none;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+#Den_Haag {
+  display: none;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+/*
+=====================================================================================================================
+													END OF CODE for index page
+=====================================================================================================================
+*/
+
+/*
+=====================================================================================================================
+													Code for Housing page
+=====================================================================================================================
+*/
+
+.collapse-content {
+  width: 100%;
+}
+
+.collapse {
+  background: #f0ecec;
+  margin-bottom: 2%;
+}
+
+.collapse a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.9rem 1.8rem;
+  color: #555555;
+  position: relative;
+}
+
+.collapse a {
+  background: #f0ecec;
+}
+
+.collapse a:before {
+  content: "";
+  border-top: 7px solid #555555;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.inner-content {
+  padding: 1.8rem;
+}
+
+.content {
+  max-height: 0em;
+  transition: 0.3s linear 0s;
+  overflow: hidden;
+}
+
+.collapse + .collapse a {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.collapse:target .content {
+  max-height: 15em;
+}
+
+.collapse:target a:before {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 768px) {
+  .collapse-content {
+    width: 80vw;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (max-width: 425px) {
+  body {
+    line-height: 1.3;
+  }
+  .collapse-content {
+    width: 80vw;
+  }
+  .inner-content {
+    padding: 1.2rem;
+  }
+  .inner-content h3 {
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    line-height: 1.3;
+  }
+  .collapse-content {
+    width: 80vw;
+  }
+  .inner-content {
+    padding: 0.8rem;
+  }
+  .inner-content h3 {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/*
+=====================================================================================================================
+													Code for Image Cards
+=====================================================================================================================
+*/
+.lat_1 {
+  width: 20%;
+  padding: 1.5%;
+  position: relative;
+  margin: 0;
+  float: left;
+}
+.hus_1 {
+  background-color: #ffffff;
+  color: #2c69bb;
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  border: 1px solid #2c69bb;
+  font-weight: 500;
+}
+.hus_2 {
+  width: 15%;
+  display: inline-block;
+}
+.hus_3 {
+  width: 75%;
+  text-align: center;
+  display: inline-block;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.range-slider {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 6em;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #333;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Results Gallery*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+.container-gallery {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: 2rem 2rem;
+  /*padding: 5%;*/
+}
+.card {
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text {
+  padding: 5px;
+}
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text {
+  text-align: justify;
+}
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container-gallery {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+/*
+=====================================================================================================================
+													END OF CODE Housing page
+=====================================================================================================================
+*/
+
+/*
+=====================================================================================================================
+													code for Services page
+=====================================================================================================================
+*/
+/*Containers*/
+
+.img-hover-zoom {
+  height: auto;
+  overflow: hidden;
+}
+
+/*Blur-zoom container*/
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(0.8);
+}
+
+/*The Transformation*/
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+p {
+  font-size: 16px;
+}
+.margin {
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+.bg-1 {
+  background-color: #4886ce; /* Blue */
+  color: #c5c2c2;
+  background-size: auto;
+}
+.bg-2 {
+  background-color: rgb(56, 56, 148); /* Dark Blue */
+  color: white;
+  text-align: justify;
+  padding: 10%;
+}
+.bg-3 {
+  background-color: #ffffff; /* White */
+  color: #000000;
+}
+.bg-4 {
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.col-sm-4 {
+  text-align: justify;
+}
+/*Image container*/
+.img-responsive {
+  height: auto;
+  overflow: hidden;
+  max-width: 350px;
+  min-width: 350px;
+  max-height: 300px;
+  min-height: 300px;
+  display: flex;
+}
+
+/*Colorize-zoom container*/
+.img-responsive--colorize img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/*The Transformation*/
+
+.img-responsive--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/*
+=====================================================================================================================
+													END OF CODE Services page
+=====================================================================================================================
+*/
+
+/*
+=====================================================================================================================
+													code for Contact page
+=====================================================================================================================
+*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: rgba(
+    9.000000413507223,
+    87.00000241398811,
+    203.00000309944153,
+    1
+  );
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+textarea {
+  height: 200px;
+}
+.container_Contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 25%;
+  margin-top: -440px;
+  width: 60%;
+}
+#error {
+  background-color: white;
+  width: 100%;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.contact {
+  padding-top: 90px;
+  padding-left: 30px;
+}
+/*
+=====================================================================================================================
+													END OF CODE Contact page
+=====================================================================================================================
+*/
+
+/*
+=====================================================================================================================
+													code for About page
+=====================================================================================================================
+*/
+/* Main Header Container */
+.HeaderSection {
+  background-image: url("../img/HeaderImage.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.AboutPageHeader {
+  font-size: 500%;
+  color: rgb(94, 145, 240);
+  text-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* About Info Container */
+.AboutSection {
+  padding: 5%;
+  text-align: center;
+}
+
+.AboutInfoHeader {
+  color: rgb(94, 145, 240);
+  font-size: 350%;
+  padding-bottom: 2%;
+  text-align: justify;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.About_column {
+  float: left;
+  width: 25%;
+  margin-bottom: 5%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .About_column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.About_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.About_title {
+  font-weight: bold;
+}
+
+.About_container {
+  padding: 0 16px;
+  text-align: justify;
+}
+
+.About_container h2 {
+  color: black;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.About_container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.About_button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(9, 87, 203, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.About_button:hover {
+  background: #0080ff;
+}
+.About_avatar_image {
+  border-radius: 50%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+.Information_About {
+  text-align: center;
+}
+/*
+=====================================================================================================================
+													END OF CODE About page
+=====================================================================================================================
+*/
+
+/*
+=====================================================================================================================
+													code for login/signup page
+=====================================================================================================================
+*/
+.form {
+  background-color: rgba(9, 87, 203, 255);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.top-area {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.top-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-area li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.top-area li a:hover {
+  background: #0080ff;
+  color: #ffffff;
+}
+.top-area .active a {
+  background: #6596de;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+.tab {
+  width: 50%;
+}
+
+.tab_active {
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(216, 216, 216);
+  font-weight: 600;
+  margin: 0 0 10px;
+  margin-top: 5px;
+}
+.Login_Label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #1da1f2;
+}
+label.active {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+label.highlight {
+  color: #ffffff;
+}
+.Login_Imput {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  background: none;
+  background-image: none;
+  border: 1px solid #ccc;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+input:focus {
+  outline: 0;
+  border-color: #1da1f2;
+}
+.label-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #6596de;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover,
+.button:focus {
+  background: #0080ff;
+}
+.button-block {
+  display: block;
+  width: 100%;
+}
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+  color: white;
+}
+.forgot a {
+  color: white;
+}
+@media (max-width: 765px) {
+  label {
+    left: 0;
+  }
+}
+/* Code By Webdevtrick ( https://webdevtrick.com ) */

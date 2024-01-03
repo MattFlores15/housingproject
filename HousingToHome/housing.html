@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Housing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <div class="Mainpage">
+      <nav>
+      <ul><a href="index.html">
+        <img class="logo" src="img/logoMk3.png">
+      </a>
+      <li><a href="login.html">Sign up</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="dropdown">
+        <a class="dropbtn">Housing <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="housing.html">With VOG</a>
+          <a href="housing.html">Non VOG</a>
+        </div>
+      </li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+    </div>
+    <!--Filter Menu-->
+    <div class="lat_1">
+      <div class="hus_1">
+        <span class="hus_2">///</span>
+        <span class="hus_3">Housing</span>
+      </div>
+
+      <div class="collapse-content">
+        <div class="collapse" id="Availability">
+          <a class="instagram" href="#Availability"> Availability</a>
+          <div class="content">
+            <div class="inner-content">
+              <label class="container"
+                >Available 
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Non Available
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse" id="twitter">
+          <a class="twitter" href="#twitter"
+            ><i class="fab fa-twitter"></i> Bulding Facilities</a
+          >
+          <div class="content">
+            <div class="inner-content">
+              <label class="container"
+                >Bikeshed
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Laundrette
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Parking
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Concierge
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Meeting point
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Gym
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="dribbble">
+          <a class="dribbble" href="#dribbble"
+            ><i class="fab fa-dribbble"></i> Residence type</a
+          >
+          <div class="content">
+            <div class="inner-content">
+              <label class="container"
+                >Studio
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Room
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Apartment
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Loft
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Student House
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="youtube">
+          <a class="youtube" href="#youtube"
+            ><i class="fab fa-youtube"></i> Price p/month</a
+          >
+          <div class="content">
+            <div class="range-slider">
+              <label for="price">Price</label>
+              <input type="text" id="price" />
+              <div id="mySlider"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Results Gallery-->
+
+    <div class="container-gallery">
+      <div class="card">
+         <div class="img">
+            <img src="img/eindhoven_rooms_03-5a817f7337919.jpg">
+         </div>
+         <div class="top-text">
+            <div class="name">
+               Room 1
+            </div>
+            <p>
+               Eindhoven
+            </p>
+         </div>
+         <div class="bottom-text">
+            <div class="text">
+              This is the room 1, its stated as an individual room in a shared student house.
+            </div>
+            <div class="btn">
+               <a href="#">Read more</a>
+            </div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="img">
+            <img src="img/Eindhoven_Rooms_04.jpg">
+         </div>
+         <div class="top-text">
+            <div class="name">
+               Room 2
+            </div>
+            <p>
+               Amsterdam
+            </p>
+         </div>
+         <div class="bottom-text">
+            <div class="text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+            </div>
+            <div class="btn">
+               <a href="#">Read more</a>
+            </div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="img">
+            <img src="img/image_5da47b47a44122_77526827.jpg">
+         </div>
+         <div class="top-text">
+            <div class="name">
+               Apartment 1
+            </div>
+            <p>
+               Amsterdam
+            </p>
+         </div>
+         <div class="bottom-text">
+            <div class="text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+            </div>
+            <div class="btn">
+               <a href="img/Groningen_Student_Room-1.jpg">Read more</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+           <img src="img/living.jpg">
+        </div>
+        <div class="top-text">
+           <div class="name">
+              Apartment 2
+           </div>
+           <p>
+             Eindhoven
+           </p>
+        </div>
+        <div class="bottom-text">
+           <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+           </div>
+           <div class="btn">
+              <a href="#">Read more</a>
+           </div>
+        </div>
+     </div>
+
+     <div class="card">
+      <div class="img">
+         <img src="img/eindhoven_rooms_03-5a817f7337919.jpg">
+      </div>
+      <div class="top-text">
+         <div class="name">
+            Room 3
+         </div>
+         <p>
+            Rotterdam
+         </p>
+      </div>
+      <div class="bottom-text">
+         <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+         </div>
+         <div class="btn">
+            <a href="#">Read more</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="card">
+    <div class="img">
+       <img src="img/038_1440x960.jpg">
+    </div>
+    <div class="top-text">
+       <div class="name">
+          Apartment 3
+       </div>
+       <p>
+         Den Haag
+       </p>
+    </div>
+    <div class="bottom-text">
+       <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+       </div>
+       <div class="btn">
+          <a href="#">Read more</a>
+       </div>
+    </div>
+ </div>
+ <div class="card">
+  <div class="img">
+     <img src="img/eec0a50ac275991dd4fed4fdc1fc0c6e.jpg">
+  </div>
+  <div class="top-text">
+     <div class="name">
+        Room 4
+     </div>
+     <p>
+        Den Haag
+     </p>
+  </div>
+  <div class="bottom-text">
+     <div class="text">
+       This is the room 1, its stated as an individual room in a shared student house.
+     </div>
+     <div class="btn">
+        <a href="#">Read more</a>
+     </div>
+  </div>
+</div>
+<div class="card">
+  <div class="img">
+     <img src="img/EindhovenDeLampendriessen-1a8f_4.jpg">
+  </div>
+  <div class="top-text">
+     <div class="name">
+        Apartment 4
+     </div>
+     <p>
+        Rotterdam
+     </p>
+  </div>
+  <div class="bottom-text">
+     <div class="text">
+       This is the room 1, its stated as an individual room in a shared student house.
+     </div>
+     <div class="btn">
+        <a href="#">Read more</a>
+     </div>
+  </div>
+</div>
+<div class="card">
+  <div class="img">
+     <img src="img/Short-stay-apartments-eindhoven-inside-apartment.jpg">
+  </div>
+  <div class="top-text">
+     <div class="name">
+        Apartment 5
+     </div>
+     <p>
+        Eindhoven
+     </p>
+  </div>
+  <div class="bottom-text">
+     <div class="text">
+       This is the room 1, its stated as an individual room in a shared student house.
+     </div>
+     <div class="btn">
+        <a href="#">Read more</a>
+     </div>
+  </div>
+</div>
+   </div>
+   <footer>
+          <div class="flexbox">
+            <div class="Services">
+              <h3>Services</h3>
+              <p><a href="services.html">Your ideal place</a></p>
+              <p><a href="services.html">Collaborations</a></p>
+              <p><a href="services.html">Customer Service</a></p>
+            </div>
+            <div class="extra_links">
+              <h3>Are you looking for...</h3>
+              <p><a href="housing.html">Housing</a></p>
+              <p><a href="about.html">Extra information</a></p>
+              <p><a href="contact.html">Contact us</a></p>
+            </div>
+            <div class="Partnership">
+              <h3>Our partners</h3>
+              <div>
+                <img class="footer-images" src="img/ING.jpeg">
+              </div>
+              <div>
+                <img class="footer-images" src="img/Onderwijs.png">
+              </div>
+              <div>
+                <img class="footer-images" src="img/fontys.png">
+              </div>
+              <div>
+                <img class="footer-images" src="img/eindhovenlogo.png">
+              </div>
+              <div>
+                <img class="footer-images" src="img/economische.png">
+              </div>
+              <div>
+                <img class="footer-images" src="img/h2s.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+               <div class="button-social">
+                  <div class="icon">
+                     <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <span>Facebook</span>
+               </div>
+               <div class="button-social">
+                  <div class="icon">
+                     <i class="fab fa-twitter"></i>
+                  </div>
+                  <span>Twitter</span>
+               </div>
+               <div class="button-social">
+                  <div class="icon">
+                     <i class="fab fa-instagram"></i>
+                  </div>
+                  <span>Instagram</span>
+               </div>
+               <div class="button-social">
+                  <div class="icon">
+                     <i class="fab fa-github"></i>
+                  </div>
+                  <span>Github</span>
+               </div>
+               <div class="button-social">
+                  <div class="icon">
+                     <i class="fab fa-youtube"></i>
+                  </div>
+                  <span>YouTube</span>
+               </div>
+            </div>
+          <div class="copyright">From Housing To Home © 2021</div>
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>From housing to home</title>
+	<!--Link to the stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Link to the JavaScript-->
+	<script
+  	src="https://code.jquery.com/jquery-3.6.0.min.js"
+  	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  	crossorigin="anonymous"></script>
+	<script type="text/javascript" defer="" src="js/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<div class="Mainpage">
+		<nav>
+      <ul><a href="index.html">
+        <img class="logo" src="img/Asset 10@0.5x.png">
+      </a>
+      <li><a href="login.html">Sign up</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="dropdown">
+        <a class="dropbtn">Housing <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="housing.html">With VOG</a>
+          <a href="housing.html">Non VOG</a>
+        </div>
+      </li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+	<div class="Wrapper">
+		<div class="Main_Information">
+			<div class="Title_Desc">
+				<span class="Text_1">Find your ideal place</span><br>
+				<span class="Text_2">Find the best accommodation for your studies and enjoy the city!</span>
+			</div>
+
+			<!--Image gallery-->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img class="housing_images" src="img/038_1440x960.jpg">
+					<div class="Housing_text">New Apartment</div>
+				</div>
+				<div class="mySlides fade">
+					<div  class="numbertext">2 / 3</div>
+					<img class="housing_images" src="img/Groningen_Student_Room-1.jpg">
+					<div class="Housing_text">Student Housing</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img class="housing_images" src="img/living.jpg">
+					<div class="Housing_text">Your new place</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div class="Housing_Search">
+			<div class="Filter">
+				<div class="flex-container">
+					<div>
+						<select id="City" onchange="getCitySelectValue()">
+							<option value="">City</option>
+							<option value="Eindhoven">Eindhoven</option>
+							<option>Amsterdam</option>
+							<option>Rotterdam</option>
+							<option>Den_Haag</option>
+							<i class="fa fa-angle-down"></i>
+						</select>
+					</div>
+					<div>
+						<select id="Price" onchange="getPriceSelectValue()">
+							<option>Price Range</option>
+							<option value="lessThen">< 400</option>
+							<option value="Between"> > 400 < 500</option>
+							<option value="MoreThen">> 500</option>
+						</select>
+					</div>
+					<div>
+						<select id="Currency" onchange="getCurrencySelectValue()">
+							<option value="">Currency</option>
+							<option>Euro</option>
+							<option>Dollar</option>
+							<option>Pound</option>
+							<option>Canadian_Dollar</option>
+						</select>
+					</div>
+					<div>
+						<select id="Rooms" onchange="getRoomSelectValue()">
+							<option>Rooms</option>
+							<option>Studio</option>
+							<option>Private</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="Eindhoven" class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="img/blankdesk.png">
+						<img src="img/blankdesk.png" alt="Cinque Terre" width="600" height="400">
+					</a>
+					<div class="desc">
+						<h2>Eindhoven</h2>
+						<span>Private room, </span>
+						<span>20&#13217;, </span>
+						<span id="PriceEin">Price: €415, </span>
+						<span>From 25 july, </span>
+						<span>Registration possible - Rent</span>
+					</div>
+					<button class="button"><a href="housing.html">Learn more</a></button>
+				</div>
+			</div>
+			<div id="Amsterdam" class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="img/funky-hotel-Amsterdam.jpg">
+						<img src="img/funky-hotel-Amsterdam.jpg" alt="Cinque Terre" width="600" height="400">
+					</a>
+					<div class="desc">
+						<h2>Amsterdam</h2>
+						<span>Studio room, </span>
+						<span>35&#13217;, </span>
+						<span id="PriceAms">Price: €645, </span>
+						<span>From 30 july, </span>
+						<span>Registration possible - Rent</span>
+					</div>
+					<button class="button"><a href="housing.html">Learn more</a></button>
+				</div>
+			</div>
+			<div id="Rotterdam" class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="img/campus_10.23.15_06.png">
+						<img src="img/campus_10.23.15_06.png" alt="Cinque Terre" width="600" height="400">
+					</a>
+					<div class="desc">
+						<h2>Rotterdam</h2>
+						<span>Studio room, </span>
+						<span>25&#13217;, </span>
+						<span id="PriceRot">Price: €450, </span>
+						<span>From 20 july, </span>
+						<span>Registration possible - Rent</span>
+					</div>
+					<button class="button"><a href="housing.html">Learn more</a></button>
+				</div>
+			</div>
+			<div id="Den_Haag" class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="img/Groningen_Student_Room-1.jpg">
+						<img src="img/Groningen_Student_Room-1.jpg" alt="Cinque Terre" width="600" height="400">
+					</a>
+					<div class="desc">
+						<h2>Den Haag</h2>
+						<span>Private room, </span>
+						<span>30&#13217;, </span>
+						<span id="PriceDen">Price: €525, </span>
+						<span>From 18 july, </span>
+						<span>Registration possible - Rent</span>
+					</div>
+					<button class="button"><a href="housing.html">Learn more</a></button>
+				</div>
+			</div>
+			</div>	
+				<footer>
+					<div class="flexbox">
+						<div class="Services">
+							<h3>Services</h3>
+							<p><a href="services.html">Your ideal place</a></p>
+							<p><a href="services.html">Collaborations</a></p>
+							<p><a href="services.html">Customer Service</a></p>
+						</div>
+						<div class="extra_links">
+							<h3>Are you looking for...</h3>
+							<p><a href="housing.html">Housing</a></p>
+							<p><a href="about.html">Extra information</a></p>
+							<p><a href="contact.html">Contact us</a></p>
+						</div>
+						<div class="Partnership">
+							<h3>Our partners</h3>
+							<div>
+								<img class="footer-images" src="img/ING.jpeg">
+							</div>
+							<div>
+								<img class="footer-images" src="img/Onderwijs.png">
+							</div>
+							<div>
+								<img class="footer-images" src="img/fontys.png">
+							</div>
+							<div>
+								<img class="footer-images" src="img/eindhovenlogo.png">
+							</div>
+							<div>
+								<img class="footer-images" src="img/economische.png">
+							</div>
+							<div>
+								<img class="footer-images" src="img/h2s.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+			         <div class="button-social">
+			            <div class="icon">
+			               <i class="fab fa-facebook-f"></i>
+			            </div>
+			            <span>Facebook</span>
+			         </div>
+			         <div class="button-social">
+			            <div class="icon">
+			               <i class="fab fa-twitter"></i>
+			            </div>
+			            <span>Twitter</span>
+			         </div>
+			         <div class="button-social">
+			            <div class="icon">
+			               <i class="fab fa-instagram"></i>
+			            </div>
+			            <span>Instagram</span>
+			         </div>
+			         <div class="button-social">
+			            <div class="icon">
+			               <i class="fab fa-github"></i>
+			            </div>
+			            <span>Github</span>
+			         </div>
+			         <div class="button-social">
+			            <div class="icon">
+			               <i class="fab fa-youtube"></i>
+			            </div>
+			            <span>YouTube</span>
+			         </div>
+			      </div>
+					<div class="copyright">From Housing To Home © 2021</div>
+				</footer>
+	</body>
+</html>
